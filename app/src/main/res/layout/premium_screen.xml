@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Premium"
+                    android:fontFamily="@font/gothammedium"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/settings_icon" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/spotifyapplogocircled"
+                    android:layout_margin="15dp">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Coming Soon..."
+                    android:fontFamily="@font/gothammedium"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white">
+                </TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/navbar_bg">
+
+            <LinearLayout
+                android:id="@+id/layout_home"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_home"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/spotify_home_icon" />
+
+                <TextView
+                    android:id="@+id/text_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="Home"
+                    android:textColor="#989898" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_search"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/spotify_search_icon"
+                    android:layout_marginBottom="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="Search"
+                    android:fontFamily="@font/circularspotifymedium"
+                    android:textColor="#989898" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_library"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_library"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/spotify_library_icon"
+                    android:layout_marginBottom="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text_library"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="Your Library"
+                    android:fontFamily="@font/circularspotifymedium"
+                    android:textColor="#989898" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_premium"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_premium"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/spotify_main_icon_clicked"
+                    android:layout_marginBottom="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text_premium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="Premium"
+                    android:fontFamily="@font/circularspotifymedium"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

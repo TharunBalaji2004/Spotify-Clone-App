@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/spotifyapplogocircled"
+        android:label="Spotify Clone"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SpotifyClone"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Main Activity" />
+        <activity
+            android:name=".SearchActivity"
+            android:label="Search Activity" />
+        <activity
+            android:name=".LibraryActivity"
+            android:label="Library Activity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings Activity" />
+        <activity
+            android:name=".PremiumActivity"
+            android:label="Premium Activity" />
+    </application>
+
+</manifest>

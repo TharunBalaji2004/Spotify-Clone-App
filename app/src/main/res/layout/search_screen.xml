@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search"
+                    android:fontFamily="@font/gothammedium"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/camera_icon" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="What do you want to listen to?"
+                android:fontFamily="@font/circularspotifymedium"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/search_icon_32px"
+                android:background="@drawable/search_input_text"></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browse all"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gothammedium"
+                android:textSize="15dp"/>
+
+            <ScrollView
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rowCount="8"
+                    android:columnCount="2">
+
+                    <LinearLayout
+                        android:id="@+id/search_layout1"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#e13300">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Podcasts"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong1" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout2"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#7358ff">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Live Events"
+                                android:lineSpacingMultiplier="1.3"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong2" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout3"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#1e3264">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingMultiplier="1.3"
+                                android:text="Made For You"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong3" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout4"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#e8125c">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="New releases"
+                                android:lineSpacingMultiplier="1.3"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong1" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout5"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#e9142a">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hindi"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong5" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout6"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#b02897">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Punjabi"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong6" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout7"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#a56752">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tamil"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong7" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout8"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#d84000">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Telugu"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong8" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout9"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#8c67ac">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Charts"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong9" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout10"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#158a08">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pop"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong10" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout11"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#e9142a">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Indie"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong11" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout12"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#b02897">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Trending"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong12" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout13"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#e51e31">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Love"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong13" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout14"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#8c67ac">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Discover"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong14" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout15"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#e1118b">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mood"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong15" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/search_layout16"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_height="100dp"
+                        android:background="#537aa1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Party"
+                                android:layout_margin="8dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/gothammedium"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/searchsong16" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_height="40dp">
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_height="40dp">
+                    </LinearLayout>
+
+                </GridLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/navbar_bg">
+
+            <LinearLayout
+                android:id="@+id/layout_home"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_home"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/spotify_home_icon" />
+
+                <TextView
+                    android:id="@+id/text_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="Home"
+                    android:textColor="#989898" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_search"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/spotify_search_icon_clicked"
+                    android:layout_marginBottom="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="Search"
+                    android:fontFamily="@font/circularspotifymedium"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_library"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_library"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/spotify_library_icon"
+                    android:layout_marginBottom="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text_library"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="Your Library"
+                    android:fontFamily="@font/circularspotifymedium"
+                    android:textColor="#989898" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_premium"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_premium"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/spotify_main_icon"
+                    android:layout_marginBottom="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text_premium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="Premium"
+                    android:fontFamily="@font/circularspotifymedium"
+                    android:textColor="#989898" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
+
+
