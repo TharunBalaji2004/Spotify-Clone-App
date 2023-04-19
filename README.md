@@ -8,6 +8,32 @@ Clone the repo, and start running the project
 git clone https://github.com/TharunBalaji2004/Spotify-Clone-App.git
 ```
 
+### App Configuration
+```gradle
+android {
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 24
+        targetSdk 33
+        versionCode 3
+        versionName '3.3'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+```
+
 ### App Screenshots
 
 | Splash Screen | Home Screen | Search Screen |
