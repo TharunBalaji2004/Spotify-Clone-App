@@ -1,6 +1,9 @@
 # Spotify-Clone-App
 Spotify Clone application developed using JAVA and includes XML FrontEnd (under Development) 👨‍💻☕
 
+- [Installation Guide](#installation)
+- [App Config](#app-configuration)
+- [App Screenshots](#app-screenshots)
 
 ### Installation
 Clone the repo, and start running the project
