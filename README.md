@@ -2,13 +2,13 @@
 Spotify Clone application developed using JAVA and includes XML FrontEnd (under Development) 👨‍💻☕
 
 
-# Installation
+### Installation
 Clone the repo, and start running the project
 ```
 git clone https://github.com/TharunBalaji2004/Spotify-Clone-App.git
 ```
 
-# App Screenshots
+### App Screenshots
 
 | Splash Screen | Home Screen | Search Screen |
 | :---: | :---: | :---: |
