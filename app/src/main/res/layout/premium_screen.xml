@@ -22,14 +22,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:layout_marginLeft="10dp"
                     android:layout_gravity="center"
                     android:src="@drawable/spotify_main_icon_clicked" />
 
@@ -43,33 +42,621 @@
                     android:textStyle="bold"
                     android:textColor="@color/white">
                 </TextView>
-
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/spotifyapplogocircled"
-                    android:layout_margin="15dp">
-                </ImageView>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Coming Soon..."
-                    android:fontFamily="@font/gothammedium"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/white">
-                </TextView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:fontFamily="@font/circularspotifymedium"
+                            android:textColor="@color/white"
+                            android:text="Pick your premium plan"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:padding="20dp"
+                            android:background="#4a8aeb">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="20dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Mini"
+                                        android:fontFamily="@font/gothammedium"
+                                        android:textSize="18dp"
+                                        android:textColor="@color/white" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="2dp"
+                                                android:text="From ₹7"
+                                                android:layout_gravity="end"
+                                                android:fontFamily="@font/gothammedium"
+                                                android:textSize="18dp"
+                                                android:textColor="@color/white" />
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="end"
+                                                android:text="FOR 1 DAY"
+                                                android:fontFamily="@font/gothammedium"
+                                                android:textSize="10dp"
+                                                android:textColor="@color/white" />
+
+                                        </LinearLayout>
+
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="1 day and 1 week plans • Ad-free music\non mobile • Download 30 songs on 1\n mobile device • Mobile only plan"
+                                        android:fontFamily="@font/circularspotifymedium"
+                                        android:textSize="13dp"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/gothammedium"
+                                    android:background="@drawable/premium_button"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp"
+                                    android:textSize="13dp"
+                                    android:textStyle="bold"
+                                    android:text="VIEW PLANS"></androidx.appcompat.widget.AppCompatButton>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="Prices vary according to duration of plan.\nTerms and consitions apply."
+                                        android:fontFamily="@font/circularspotifymedium"
+                                        android:textSize="10dp"
+                                        android:textColor="#aac3f9" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:padding="20dp"
+                            android:background="#109462">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="20dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Premium Individual"
+                                        android:fontFamily="@font/gothammedium"
+                                        android:textSize="18dp"
+                                        android:textColor="@color/white" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="2dp"
+                                                android:text="₹0"
+                                                android:layout_gravity="end"
+                                                android:fontFamily="@font/gothammedium"
+                                                android:textSize="18dp"
+                                                android:textColor="@color/white" />
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="FOR 3 MONTHS"
+                                                android:layout_gravity="end"
+                                                android:fontFamily="@font/gothammedium"
+                                                android:textSize="10dp"
+                                                android:textColor="@color/white" />
+
+                                        </LinearLayout>
+
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="Ad-free music listening • Download to \nlisten offline • Debit and credit cards \naccepted"
+                                        android:fontFamily="@font/circularspotifymedium"
+                                        android:textSize="13dp"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/gothammedium"
+                                    android:background="@drawable/premium_button"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp"
+                                    android:textSize="13dp"
+                                    android:textStyle="bold"
+                                    android:text="VIEW PLANS"></androidx.appcompat.widget.AppCompatButton>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="Individual plan only. ₹119/month after. Terms and\nconditions apply. Open only to users who haven't\nalready tried premium. Offer ends soon."
+                                        android:fontFamily="@font/circularspotifymedium"
+                                        android:textSize="10dp"
+                                        android:textColor="#6fb096" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:padding="20dp"
+                            android:background="#5381b3">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="20dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Premium Duo"
+                                        android:fontFamily="@font/gothammedium"
+                                        android:textSize="18dp"
+                                        android:textColor="@color/white" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="2dp"
+                                                android:text="Free"
+                                                android:layout_gravity="end"
+                                                android:fontFamily="@font/gothammedium"
+                                                android:textSize="18dp"
+                                                android:textColor="@color/white" />
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="end"
+                                                android:text="FOR 1 MONTH"
+                                                android:fontFamily="@font/gothammedium"
+                                                android:textSize="10dp"
+                                                android:textColor="@color/white" />
+
+                                        </LinearLayout>
+
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="2 Premium accounts • For couples who\nlive together • Ad-free music listening •\nDownload 10,000 songs/device, on up\nto 5 devices per account • Choose 1, 3, 6\nor 12 months of Premium • Debit and\ncredit cards accepted"
+                                        android:fontFamily="@font/circularspotifymedium"
+                                        android:textSize="13dp"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/gothammedium"
+                                    android:background="@drawable/premium_button"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp"
+                                    android:textSize="13dp"
+                                    android:textStyle="bold"
+                                    android:text="VIEW PLANS"></androidx.appcompat.widget.AppCompatButton>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="Offer only for users who are new to Premium. Terms\nand conditions apply."
+                                        android:fontFamily="@font/circularspotifymedium"
+                                        android:textSize="10dp"
+                                        android:textColor="#afb7df" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:padding="20dp"
+                            android:background="#942a8e">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="20dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Premium Family"
+                                        android:fontFamily="@font/gothammedium"
+                                        android:textSize="18dp"
+                                        android:textColor="@color/white" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="2dp"
+                                                android:text="Free"
+                                                android:layout_gravity="end"
+                                                android:fontFamily="@font/gothammedium"
+                                                android:textSize="18dp"
+                                                android:textColor="@color/white" />
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="end"
+                                                android:text="FOR 1 MONTH"
+                                                android:fontFamily="@font/gothammedium"
+                                                android:textSize="10dp"
+                                                android:textColor="@color/white" />
+
+                                        </LinearLayout>
+
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="Ad-free music listening • Choose 1, 3, 6\nor 12 months of Premium • Debit and\ncredit cards accepted"
+                                        android:fontFamily="@font/circularspotifymedium"
+                                        android:textSize="13dp"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/gothammedium"
+                                    android:background="@drawable/premium_button"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp"
+                                    android:textSize="13dp"
+                                    android:textStyle="bold"
+                                    android:text="VIEW PLANS"></androidx.appcompat.widget.AppCompatButton>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="Offer only for users who are new to Premium. Terms\nand conditions apply"
+                                        android:fontFamily="@font/circularspotifymedium"
+                                        android:textSize="10dp"
+                                        android:textColor="#dca4db" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:padding="20dp"
+                            android:background="#e79333">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="20dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Premium Student"
+                                        android:fontFamily="@font/gothammedium"
+                                        android:textSize="18dp"
+                                        android:textColor="@color/white" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="2dp"
+                                                android:text="Free"
+                                                android:layout_gravity="end"
+                                                android:fontFamily="@font/gothammedium"
+                                                android:textSize="18dp"
+                                                android:textColor="@color/white" />
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="end"
+                                                android:text="FOR 1 MONTH"
+                                                android:fontFamily="@font/gothammedium"
+                                                android:textSize="10dp"
+                                                android:textColor="@color/white" />
+
+                                        </LinearLayout>
+
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="Ad-free music listening • Download to\nlisten offline"
+                                        android:fontFamily="@font/circularspotifymedium"
+                                        android:textSize="13dp"
+                                        android:textColor="@color/white" />
+
+                                </LinearLayout>
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/gothammedium"
+                                    android:background="@drawable/premium_button"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp"
+                                    android:textSize="13dp"
+                                    android:textStyle="bold"
+                                    android:text="VIEW PLANS"></androidx.appcompat.widget.AppCompatButton>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="Offer available only to students at an accredited higher\neducation instituteion. Terms and consitions apply."
+                                        android:fontFamily="@font/circularspotifymedium"
+                                        android:textSize="10dp"
+                                        android:textColor="#fdcfa1" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+
 
             </LinearLayout>
 
