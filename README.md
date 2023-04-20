@@ -23,13 +23,6 @@ android {
         versionCode 3
         versionName '3.3'
     }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
     
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
