@@ -47,4 +47,4 @@ android {
 
 | Library Screen | Settings Screen | Premium Screen |
 | :---: | :---: | :---: |
-| <img src="https://user-images.githubusercontent.com/95350584/233107569-e2cbbb74-75a9-4cf1-af56-2011aef49e79.jpeg" width="200" height="450"> | <img src="https://user-images.githubusercontent.com/95350584/233107575-a1e83973-740d-4218-83a2-49df3e7dafce.jpeg" width="200" height="450"> | <img src="https://user-images.githubusercontent.com/95350584/233107583-7e6d53e6-6864-494d-8228-f97f6fc0d1aa.jpeg" width="200" height="450"> |
+| <img src="https://user-images.githubusercontent.com/95350584/233107569-e2cbbb74-75a9-4cf1-af56-2011aef49e79.jpeg" width="200" height="450"> | <img src="https://user-images.githubusercontent.com/95350584/233397649-db9192d0-8fdc-4ef5-9db7-cfb48171f022.jpeg" width="200" height="450"> | <img src="https://user-images.githubusercontent.com/95350584/233396300-45cd6151-fb3b-4f75-a4ec-5e5d04ff6478.jpeg" width="200" height="450"> |
