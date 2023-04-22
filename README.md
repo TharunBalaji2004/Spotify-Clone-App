@@ -20,8 +20,6 @@ android {
     defaultConfig {
         minSdk 24
         targetSdk 33
-        versionCode 3
-        versionName '3.3'
     }
     
     compileOptions {
